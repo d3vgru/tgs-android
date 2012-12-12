@@ -64,22 +64,25 @@ public class MainActivity extends TabbedFragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()) {
 			case R.id.menu_create:
+				// TODO show new square dialog
 				Toast.makeText(this, R.string.createBtnLabel, Toast.LENGTH_SHORT).show();
 				break;
 			case R.id.menu_compose:
 				showComposer();
 				break;
 			case R.id.menu_help:
+				// TODO show help dialog
 				Toast.makeText(this, R.string.helpBtnLabel, Toast.LENGTH_SHORT).show();
 				break;
 			case R.id.menu_refresh:
-				Toast.makeText(this, R.string.refreshBtnLabel, Toast.LENGTH_SHORT).show();
+				mTabsAdapter.notifyDataSetChanged();
 				break;
 			case R.id.menu_search:
 				// select Search tab
 		        mViewPager.setCurrentItem(TAB_SEARCH);
 				break;
 			case R.id.menu_settings:
+				// TODO show settings dialog
 				Toast.makeText(this, R.string.settingsBtnLabel, Toast.LENGTH_SHORT).show();
 				break;
 			default:
