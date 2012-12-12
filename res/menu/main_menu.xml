@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_create"
+        android:showAsAction="always"
+        android:title="@string/createBtnLabel"
+        android:icon="@drawable/social_add_group"
+        />
+    <item
+        android:id="@+id/menu_search"
+        android:showAsAction="always"
+        android:title="@string/searchBtnLabel"
+        android:icon="@drawable/action_search"
+        />
+    <item
+        android:id="@+id/menu_settings"
+        android:showAsAction="always"
+        android:title="@string/settingsBtnLabel"
+        android:icon="@drawable/action_settings"
+        />
+</menu>

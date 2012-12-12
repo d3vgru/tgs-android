@@ -43,9 +43,6 @@ import java.io.InputStream;
 import java.util.concurrent.CountDownLatch;
 
 import org.globalsquare.R;
-import org.globalsquare.R.drawable;
-import org.globalsquare.R.raw;
-import org.globalsquare.R.string;
 
 
 /**

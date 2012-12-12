@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">The Global Square</string>
+    <string name="short_name">TGS</string>
     <string name="loading">P2P Engine UP</string>
     
     <string name="fileBtnLabel">Attach</string>
@@ -10,6 +11,7 @@
     <string name="createBtnLabel">Create</string>
     <string name="saveBtnLabel">Save</string>
     <string name="cancelBtnLabel">Cancel</string>
+    <string name="settingsBtnLabel">Settings</string>
     
     <string name="overviewLabel">Overview</string>
     

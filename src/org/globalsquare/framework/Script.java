@@ -3,7 +3,6 @@
 package org.globalsquare.framework;
 
 import org.globalsquare.R;
-import org.globalsquare.R.raw;
 
 import android.content.Context;
 import android.content.res.Resources;
