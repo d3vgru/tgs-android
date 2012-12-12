@@ -13,6 +13,7 @@ import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 import org.globalsquare.*;
+import org.globalsquare.framework.*;
 
 // adapted from https://bitbucket.org/owentech/abstabsviewpager
 public class MainActivity extends SherlockFragmentActivity {
@@ -29,26 +30,33 @@ public class MainActivity extends SherlockFragmentActivity {
 		// makes the nav appear at the top
 		//bar.setDisplayShowHomeEnabled(false);
 		
-		mViewPager = new ViewPager(this);
-        mViewPager.setId(R.id.pager);
-
         setContentView(R.layout.main_activity);
+
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-        mTabsAdapter = new TabsAdapter(this, mViewPager);
+        /*
+		mViewPager = new ViewPager(this);
+        mViewPager.setId(R.id.pager);
+        */
+		mViewPager = (ViewPager)findViewById(R.id.pager);
+
+		mTabsAdapter = new TabsAdapter(this, mViewPager);
 
         mTabsAdapter.addTab(
-                        bar.newTab().setText("Fragment A"),
-                        FragmentA.class, null);
+                bar.newTab().setText(getResources().getString(R.string.searchBtnLabel)),
+                SearchFragment.class, null);
         mTabsAdapter.addTab(
-                        bar.newTab().setText("Fragment B"),
-                        FragmentB.class, null);
+                bar.newTab().setText(getResources().getString(R.string.overviewLabel)),
+                MessageListFragment.class, null);
         mTabsAdapter.addTab(
-                bar.newTab().setText("Fragment A2"),
-                FragmentA.class, null);
+                bar.newTab().setText("abc"),
+                MessageListFragment.class, null);
         mTabsAdapter.addTab(
-                bar.newTab().setText("Fragment B2"),
-                FragmentB.class, null);
+                bar.newTab().setText("Another Square"),
+                MessageListFragment.class, null);
+        
+        // select Overview tab
+        mViewPager.setCurrentItem(1);
 	}
 	
 	public static class TabsAdapter extends FragmentPagerAdapter implements

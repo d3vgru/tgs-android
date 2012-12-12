@@ -6,8 +6,11 @@
     
     <string name="fileBtnLabel">Attach</string>
     <string name="sendBtnLabel">Send</string>
+    <string name="searchBtnLabel">Search</string>
     <string name="createBtnLabel">Create</string>
     <string name="saveBtnLabel">Save</string>
     <string name="cancelBtnLabel">Cancel</string>
+    
+    <string name="overviewLabel">Overview</string>
     
 </resources>
