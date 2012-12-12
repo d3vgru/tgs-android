@@ -281,5 +281,23 @@
         <src>$ACCOUNT/assets/Android%204%20Controls.bmml#ga-list-2line</src>
       </controlProperties>
     </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Button" x="513" y="20" w="48" h="44" measuredW="48" measuredH="30" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Button" x="464" y="25" w="48" h="39" measuredW="48" measuredH="30" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>SearchIcon%7Csmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Button" x="416" y="25" w="48" h="39" measuredW="48" measuredH="30" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>PlusBigIcon%7Csmall</icon>
+        <text/>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
