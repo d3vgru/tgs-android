@@ -2,7 +2,8 @@
 1. This project depends on [ActionBarSherlock](https://github.com/JakeWharton/ActionBarSherlock) as a library project.
 
 # TriblerDroid
-_NEEDS UPDATING_ To build, 
+_NEEDS UPDATING_
+To build, 
 
 1. Run arno-build.bat in jni, after installing Android NDK and editing .bat
 2. Build .apk from Eclipse (e.g. Run project)
@@ -10,7 +11,8 @@ _NEEDS UPDATING_ To build,
 4. Install and run .apk on device
 
 # ORIGINAL
-_TOTALLY OBSOLETE?_ To rebuild the zip file and scripts jar:
+_TOTALLY OBSOLETE?_
+To rebuild the zip file and scripts jar:
 
 Use build.xml as an ant script.
 
