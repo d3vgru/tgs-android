@@ -1,4 +1,4 @@
-package com.tudelft.triblerdroid.first;
+package org.globalsquare;
 
 import com.googlecode.android_scripting.interpreter.InterpreterDescriptor;
 import com.googlecode.android_scripting.interpreter.InterpreterProvider;

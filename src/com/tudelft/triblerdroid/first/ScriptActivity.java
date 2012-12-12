@@ -34,6 +34,9 @@ import android.widget.VideoView;
 import java.io.File;
 import java.util.Timer;
 
+import org.globalsquare.R;
+
+
 /**
  * @author Alexey Reznichenko (alexey.reznichenko@gmail.com)
  */
@@ -92,7 +95,7 @@ public class ScriptActivity extends Activity implements Pausable {
 	  Bundle extras = getIntent().getExtras();
 	  hash = extras.getString("hash");//"280244b5e0f22b167f96c08605ee879b0274ce22"
 	  tracker = extras.getString("tracker"); // See VodoEitActivity to change this
-	  destination = "/sdcard/swift/video.ts";
+	  destination = Environment.getExternalStorageDirectory().getPath() + "swift/video.ts";
 	  SwiftStartDownload();
   }
 
@@ -235,7 +238,8 @@ public class ScriptActivity extends Activity implements Pausable {
 	
     private class SwiftMainThread extends Thread
     {
-        public void run() 
+        @SuppressWarnings("unused")
+		public void run() 
         {
     		try 
     		{
@@ -269,6 +273,7 @@ public class ScriptActivity extends Activity implements Pausable {
 	*/
 	private class StatsTask extends AsyncTask<String, Integer, String> {
 		
+	  @SuppressWarnings("unused")
 	  protected String doInBackground(String... args) {
 	  	
 	  	String ret = "hello";
@@ -280,7 +285,7 @@ public class ScriptActivity extends Activity implements Pausable {
 	
 	  			NativeLib nativelib =  new NativeLib();
 	  			mVideoView = (VideoView) findViewById(R.id.surface_view);
-	  			boolean play = false, pause=false;
+				boolean play = false, pause=false;
 	  			
 	  			while(IntroActivity.globalP2Prunning) {
 	  				String progstr = nativelib.httpprogress(args[0]);
@@ -293,7 +298,7 @@ public class ScriptActivity extends Activity implements Pausable {
 	  				else
 	  					_dialog.setMax((int)(asize/1024));
 	  				
-	  				_seqCompInt = new Integer((int)(seqcomp/1024));
+	  				_seqCompInt = Integer.valueOf((int)(seqcomp/1024));
 	  				
 	  				Log.w("SwiftStats", "SeqComp   " + seqcomp );
 	  				

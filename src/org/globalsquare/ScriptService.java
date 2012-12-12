@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.tudelft.triblerdroid.first;
+package org.globalsquare;
 
 import android.app.Notification;
 import android.app.PendingIntent;

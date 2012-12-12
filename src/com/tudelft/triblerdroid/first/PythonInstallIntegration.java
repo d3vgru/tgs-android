@@ -1,22 +1,12 @@
 
 package com.tudelft.triblerdroid.first;
 
-import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.os.Environment;
-import android.view.View;
-import android.view.Window;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
-import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.Button;
 import android.util.Log;
 
 import com.googlecode.android_scripting.AsyncTaskListener;
-import com.googlecode.android_scripting.FileUtils;
 import com.googlecode.android_scripting.InterpreterInstaller;
 import com.googlecode.android_scripting.InterpreterUninstaller;
 import com.googlecode.android_scripting.activity.Main;
@@ -25,13 +15,17 @@ import com.googlecode.android_scripting.interpreter.InterpreterDescriptor;
 
 import java.io.File;
 
+import org.globalsquare.R;
+
+
 public class PythonInstallIntegration extends Main {
 	
 	  Button mButtonModules;
 	  File mDownloads;
 
-	  private Dialog mDialog;
+//	  private Dialog mDialog;
 	  protected String mModule;
+	  /*
 	  private CharSequence[] mList;
 	  private ProgressDialog mProgress;
 	  private boolean mPromptResult;
@@ -39,6 +33,7 @@ public class PythonInstallIntegration extends Main {
 	  private File mFrom;
 	  private File mSoPath;
 	  private File mPythonPath;
+	  */
 
 	  
 	  

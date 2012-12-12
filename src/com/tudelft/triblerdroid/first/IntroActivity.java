@@ -21,7 +21,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -29,7 +28,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.googlecode.android_scripting.Constants;
 import com.googlecode.android_scripting.facade.ActivityResultFacade;
@@ -46,7 +44,9 @@ import java.util.Set;
 import java.util.Iterator;
 import java.util.HashSet;
 import java.util.Timer;
-import java.util.TimerTask;
+
+import org.globalsquare.R;
+
 
 /**
  * @author Alexey Reznichenko (alexey.reznichenko@gmail.com)

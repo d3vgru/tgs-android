@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">App with swift and Python</string>
-    <string name="app_name">IETF-PPSP-DEMO-March2012</string>
+    <string name="app_name">The Global Square</string>
     <string name="loading">P2P Engine UP</string>
-
+    
+    <string name="fileBtnLabel">Attach</string>
+    <string name="sendBtnLabel">Send</string>
+    <string name="createBtnLabel">Create</string>
+    <string name="saveBtnLabel">Save</string>
+    <string name="cancelBtnLabel">Cancel</string>
+    
 </resources>

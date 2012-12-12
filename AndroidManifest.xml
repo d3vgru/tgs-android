@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tudelft.triblerdroid.first"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="org.globalsquare"
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <application
-        android:name="com.tudelft.triblerdroid.first.ScriptApplication"
+        android:name="org.globalsquare.GlobalSquareApplication"
         android:debuggable="true"
         android:icon="@drawable/script_logo_48"
         android:label="@string/app_name" >
+        <activity
+            android:theme="@style/Theme.Sherlock.Light"
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
         <activity
             android:name=".IntroActivity"
             android:configChanges="keyboardHidden|orientation" >
@@ -25,22 +35,25 @@
             android:name=".VideoInfoActivity"
             android:configChanges="keyboardHidden|orientation" >
         </activity>
+        -->
+        
+        <service android:name="org.globalsquare.ScriptService" />
+
+        <provider
+            android:authorities="org.globalsquare.pythonprovider"
+            android:name="org.globalsquare.PythonProvider" />
+
+        <!--
         <activity
-            android:name=".ScriptActivity"
+            android:name="com.tudelft.triblerdroid.first.ScriptActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="com.googlecode.android_scripting.action.ACTION_LAUNCH_FOR_RESULT" />
                 <category android:name="android.intent.category.DEFAULT" />
-		    </intent-filter>
+            </intent-filter>
         </activity>
-        
-        <service android:name="com.tudelft.triblerdroid.first.ScriptService" />
-
-        <provider
-            android:authorities="com.tudelft.triblerdroid.first.pythonprovider"
-            android:name=".PythonProvider" />
 
         <activity
             android:name="com.googlecode.android_scripting.activity.FutureActivity"
@@ -50,9 +63,10 @@
             android:name="com.tudelft.triblerdroid.first.DialogActivity"
             android:configChanges="keyboardHidden|orientation"
             android:theme="@android:style/Theme.Light" />
+        -->
     </application>
 
-    <uses-sdk android:minSdkVersion="4" />
+    <uses-sdk android:minSdkVersion="9" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" >

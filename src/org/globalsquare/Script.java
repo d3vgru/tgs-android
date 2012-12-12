@@ -1,6 +1,6 @@
 // Copyright 2010 Google Inc. All Rights Reserved.
 
-package com.tudelft.triblerdroid.first;
+package org.globalsquare;
 
 import org.globalsquare.R;
 
