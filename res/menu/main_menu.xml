@@ -13,9 +13,21 @@
         android:icon="@drawable/action_search"
         />
     <item
+        android:id="@+id/menu_refresh"
+        android:showAsAction="always"
+        android:title="@string/refreshBtnLabel"
+        android:icon="@drawable/navigation_refresh"
+        />
+    <item
         android:id="@+id/menu_settings"
         android:showAsAction="always"
         android:title="@string/settingsBtnLabel"
         android:icon="@drawable/action_settings"
+        />
+    <item
+        android:id="@+id/menu_help"
+        android:showAsAction="always"
+        android:title="@string/helpBtnLabel"
+        android:icon="@drawable/action_help"
         />
 </menu>

@@ -18,10 +18,23 @@ import org.globalsquare.*;
 import org.globalsquare.framework.*;
 
 public class MainActivity extends SherlockFragmentActivity {
+	public final static int TAB_SEARCH = 0;
+	public final static int TAB_OVERVIEW = 1;
+	
+	
 	ViewPager mViewPager;
     TabsAdapter mTabsAdapter;
     TextView tabCenter;
     TextView tabText;
+    
+    /*
+    ListFragment mOverviewFragment;
+    
+    public void setOverviewFragment(ListFragment overviewFragment) {
+    	mOverviewFragment = overviewFragment;
+    }
+    */
+    
     
     // adapted from https://bitbucket.org/owentech/abstabsviewpager
 	@Override
@@ -40,12 +53,15 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		mTabsAdapter = new TabsAdapter(this, mViewPager);
 
+		// TAB_SEARCH
         mTabsAdapter.addTab(
                 bar.newTab().setText(getString(R.string.searchBtnLabel)),
                 SearchFragment.class, null);
+        // TAB_OVERVIEW
         mTabsAdapter.addTab(
                 bar.newTab().setText(getString(R.string.overviewLabel)),
-                MessageListFragment.class, null);
+                OverviewListFragment.class, null);
+        // tabs for each square the user has joined
         mTabsAdapter.addTab(
                 bar.newTab().setText("abc"),
                 MessageListFragment.class, null);
@@ -54,7 +70,7 @@ public class MainActivity extends SherlockFragmentActivity {
                 MessageListFragment.class, null);
         
         // select Overview tab
-        mViewPager.setCurrentItem(1);
+        mViewPager.setCurrentItem(TAB_OVERVIEW);
 	}
 	
 	
@@ -131,6 +147,18 @@ public class MainActivity extends SherlockFragmentActivity {
 			for (int i = 0; i < mTabs.size(); i++) {
 				if (mTabs.get(i) == tag) {
                     mViewPager.setCurrentItem(i);
+                    
+                    /*
+                    switch(i) {
+                		case TAB_SEARCH: // search
+                			break;
+                		case TAB_OVERVIEW: // "my squares" (combined history)
+                			break;
+                    	default:
+                    		break;
+                    }
+                    */
+                    break;
 				}
 			}
 		}
