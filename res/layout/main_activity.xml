@@ -6,7 +6,7 @@
     
     <!-- main fragment "tab group" -->
     <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+        android:id="@+id/mainActivityPager"
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
@@ -14,10 +14,12 @@
     
     <!-- text entry -->
     <LinearLayout
+        android:id="@+id/mainActivityComposer"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
+        android:visibility="gone"
         >
         
         <!-- text box -->
@@ -48,7 +50,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
-	            android:src="@drawable/content_attachment"
+	            android:src="@drawable/content_new_attachment"
 	            android:contentDescription="@string/fileBtnLabel"
 	            />
 	        

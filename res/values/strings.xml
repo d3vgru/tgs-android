@@ -14,6 +14,7 @@
     <string name="settingsBtnLabel">Settings</string>
     <string name="helpBtnLabel">Help</string>
     <string name="refreshBtnLabel">Refresh</string>
+    <string name="composeBtnLabel">Compose</string>
     
     <string name="overviewLabel">My Squares</string>
     <string name="noSquaresMsg">You haven\'t joined any squares yet.
