@@ -3,6 +3,7 @@
 
 # TriblerDroid
 _NEEDS UPDATING_ To build, 
+
 1. Run arno-build.bat in jni, after installing Android NDK and editing .bat
 2. Build .apk from Eclipse (e.g. Run project)
 3. Patch .apk to add missing native lib by running patch0.bat in the hack/ directory.
