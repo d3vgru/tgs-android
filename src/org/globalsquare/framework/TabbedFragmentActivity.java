@@ -25,7 +25,7 @@ public class TabbedFragmentActivity extends SherlockFragmentActivity {
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	}
 	
-	public static class TabsAdapter extends FragmentPagerAdapter implements
+	public static class TabsAdapter extends FragmentStatePagerAdapter implements
     		ActionBar.TabListener, ViewPager.OnPageChangeListener {
 		private final Context mContext;
 		private final ActionBar mActionBar;
